@@ -5,68 +5,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vizitinė kortelė – Maksim | Privatumo politika / Privacy Policy</title>
     <style>
-        body {
-            max-width: 42rem;
-            margin: 0 auto;
-            padding: 2rem clamp(1rem, 5vw, 2rem);
-            color: #242424;
-            background: #fff;
-            font: 1rem/1.6 system-ui, sans-serif;
+        :root {
+            --bg: #faf9f6;
+            --surface: #ffffff;
+            --text: #212121;
+            --muted: #546e7a;
+            --accent: #f57c00;
+            --accent-dark: #e65100;
+            --accent-soft: #ffe0b2;
+            --border: #ebe6df;
         }
-        h1, h2, h3 { line-height: 1.25; }
-        h1 { margin-bottom: .25rem; }
-        h2 { margin-top: 2rem; }
-        h3 { margin-bottom: .4rem; font-size: 1.08rem; }
-        p { margin: 0 0 1rem; }
-        nav { display: flex; gap: 1rem; margin-top: 1.25rem; }
-        a { color: #934000; }
-        #en { margin-top: 2.5rem; padding-top: .5rem; border-top: 1px solid #e5ddd4; }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 2rem 1rem 3rem;
+            color: var(--text);
+            background: var(--bg);
+            font: 1rem/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        .container {
+            max-width: 44rem;
+            margin: 0 auto;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: clamp(1.5rem, 4vw, 2.5rem);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        }
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 1.25rem;
+            margin-bottom: 1.75rem;
+        }
+        .badge {
+            display: inline-block;
+            background: var(--accent-soft);
+            color: var(--accent-dark);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            padding: 0.25rem 0.65rem;
+            border-radius: 999px;
+            margin-bottom: 0.6rem;
+        }
+        h1 {
+            margin: 0 0 0.25rem;
+            font-size: clamp(1.5rem, 3.5vw, 1.9rem);
+            line-height: 1.2;
+        }
+        .meta {
+            margin: 0;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 1.1rem;
+        }
+        nav a {
+            display: inline-block;
+            padding: 0.35rem 0.9rem;
+            border-radius: 999px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: background 0.15s, border-color 0.15s, color 0.15s;
+        }
+        nav a:hover,
+        nav a:focus {
+            background: var(--accent-soft);
+            border-color: var(--accent);
+            color: var(--accent-dark);
+        }
+        h2 {
+            margin: 0 0 0.75rem;
+            font-size: 1.35rem;
+            color: var(--accent-dark);
+            line-height: 1.3;
+        }
+        h3 {
+            margin: 1.35rem 0 0.35rem;
+            font-size: 1.05rem;
+            color: var(--text);
+            line-height: 1.35;
+        }
+        p {
+            margin: 0 0 0.9rem;
+        }
+        a {
+            color: var(--accent-dark);
+            text-underline-offset: 2px;
+        }
+        #en {
+            margin-top: 2.5rem;
+            padding-top: 2rem;
+            border-top: 2px dashed var(--border);
+        }
+        footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 0.85rem;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Vizitinė kortelė – Maksim</h1>
-        <p><time datetime="2026-11-25">2026-11-25</time></p>
-        <nav aria-label="Kalba / Language">
-            <a href="#lt" lang="lt">Lietuviškai</a>
-            <a href="#en" lang="en">English</a>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <span class="badge">Google Play • Privacy Policy</span>
+            <h1>Vizitinė kortelė – Maksim</h1>
+            <p class="meta">Paskutinį kartą atnaujinta / Last updated: <time datetime="2026-11-25">2026-11-25</time></p>
+            <nav aria-label="Kalba / Language">
+                <a href="#lt" lang="lt">Lietuviškai</a>
+                <a href="#en" lang="en">English</a>
+            </nav>
+        </header>
 
-    <main>
-        <section id="lt">
-            <h2>Privatumo politika</h2>
-            <p>Programėlę „Vizitinė kortelė – Maksim“ sukūrė Maksim Poplavskij. Programėlė veikia be paskyrų, reklamos ir naudojimo analitikos.</p>
+        <main>
+            <section id="lt">
+                <h2>Privatumo politika</h2>
+                <p>Programėlę <strong>„Vizitinė kortelė – Maksim“</strong> sukūrė Maksim Poplavskij. Programėlė veikia be vartotojo paskyrų, reklamos ir trečiųjų šalių naudojimo analitikos. Jokie asmens duomenys nėra parduodami ar perduodami rinkodaros tikslais.</p>
 
-            <h3>Įrenginyje saugomi duomenys</h3>
-            <p>Jūsų pridėti CV ir darbų aplanko įrašai, pasirinkta sąsajos kalba ir fotoaparatu padaryta profilio nuotrauka saugomi įrenginyje. Juos galite pašalinti išvalę programėlės duomenis įrenginio nustatymuose arba pašalinę programėlę.</p>
+                <h3>Įrenginyje saugomi duomenys</h3>
+                <p>Jūsų pridėti CV ir darbų aplanko įrašai, pasirinkta sąsajos kalba ir fotoaparatu padaryta profilio nuotrauka saugomi tik jūsų įrenginio vidinėje atmintyje. Juos galite bet kada pašalinti išvalę programėlės duomenis įrenginio nustatymuose arba pašalinę programėlę.</p>
 
-            <h3>Susisiekimas el. paštu</h3>
-            <p>Pasirinkus susisiekti, jūsų klausimas ir atsakymo el. pašto adresas perduodami pašto programėlei, kurioje atidaromas laiško juodraštis. Laišką išsiunčiate patys. Jei laišką gaunu, jo turinį ir el. pašto adresą naudoju atsakymui bei saugau tiek, kiek reikia susirašinėjimui. Norėdami paprašyti ištrinti laišką, kreipkitės žemiau nurodytu adresu.</p>
+                <h3>Kameros leidimas</h3>
+                <p>Programėlė gali kviesti įrenginio kameros programėlę tik tada, kai patys paspaudžiate profilio nuotraukos keitimo mygtuką. Padaryta nuotrauka išsaugoma tik jūsų įrenginyje ir nėra siunčiama į išorinius serverius.</p>
 
-            <h3>Vaizdai iš interneto</h3>
-            <p>Numatytoji autoriaus profilio nuotrauka ir darbų aplanko vaizdai įkeliami iš „Postimages“ per HTTPS. Užkraunant vaizdą, „Postimages“ gauna tinklo užklausą, kurioje gali būti jūsų IP adresas ir techninė užklausos informacija. Daugiau informacijos pateikta <a href="https://postimages.org/privacy">„Postimages“ privatumo politikoje</a>.</p>
+                <h3>Susisiekimas el. paštu</h3>
+                <p>Pasirinkus susisiekti, jūsų įvestas klausimas ir atsakymo el. pašto adresas perduodami jūsų įrenginio el. pašto programėlei, kurioje atidaromas laiško juodraštis. Laišką išsiunčiate patys. Jei laišką gaunu, jo turinį ir el. pašto adresą naudoju tik atsakymui ir saugau tiek, kiek reikia susirašinėjimui. Norėdami paprašyti ištrinti laišką, kreipkitės žemiau nurodytu adresu.</p>
 
-            <h3>Kontaktai</h3>
-            <p>Privatumo ir duomenų ištrynimo klausimais rašykite Maksim Poplavskij adresu <a href="mailto:maximmaan@gmail.com">maximmaan@gmail.com</a>.</p>
-        </section>
+                <h3>Vaizdai iš interneto</h3>
+                <p>Darbų aplanko projektų vaizdai įkeliami iš „Postimages“ per saugų HTTPS ryšį. Užkraunant vaizdą, „Postimages“ gauna standartinę tinklo užklausą, kurioje gali būti jūsų IP adresas ir techninė įrenginio užklausos informacija. Daugiau informacijos pateikta <a href="https://postimages.org/privacy" rel="noopener noreferrer">„Postimages“ privatumo politikoje</a>.</p>
 
-        <section id="en" lang="en">
-            <h2>Privacy Policy</h2>
-            <p>“Vizitinė kortelė – Maksim” was developed by Maksim Poplavskij. The app works without accounts, ads or usage analytics.</p>
+                <h3>Kontaktai</h3>
+                <p>Privatumo ir duomenų ištrynimo klausimais rašykite kūrėjui Maksim Poplavskij adresu <a href="mailto:maximmaan@gmail.com">maximmaan@gmail.com</a>.</p>
+            </section>
 
-            <h3>Data stored on your device</h3>
-            <p>Your CV and portfolio entries, language preference and profile photo taken with the camera are stored on your device. To remove them, clear the app’s data in your device settings or uninstall the app.</p>
+            <section id="en" lang="en">
+                <h2>Privacy Policy</h2>
+                <p><strong>“Vizitinė kortelė – Maksim”</strong> was developed by Maksim Poplavskij. The app works without user accounts, advertisements, or third-party usage analytics. No personal data is sold or shared for marketing purposes.</p>
 
-            <h3>Contact by email</h3>
-            <p>When you use the contact form, the app passes your question and reply email address to your email app and opens a draft. You choose whether to send it. If I receive your message, I use its contents and your email address to reply and keep them for as long as needed for the correspondence. You can request deletion at the email address below.</p>
+                <h3>Data stored on your device</h3>
+                <p>Your added CV and portfolio entries, selected interface language, and profile photo taken with the camera are stored solely in your device’s local storage. You can delete them at any time by clearing the app’s data in your device settings or uninstalling the app.</p>
 
-            <h3>Images loaded from the internet</h3>
-            <p>The developer’s default profile photo and portfolio images are loaded from Postimages over HTTPS. When an image is loaded, Postimages receives a network request that may include your IP address and technical request information. See the <a href="https://postimages.org/privacy">Postimages Privacy Policy</a> for details.</p>
+                <h3>Camera access</h3>
+                <p>The app invokes your device’s camera app only when you explicitly tap the button to change your profile photo. The captured photo is saved locally on your device and is never uploaded to external servers.</p>
 
-            <h3>Contact</h3>
-            <p>For privacy questions or data deletion requests, contact Maksim Poplavskij at <a href="mailto:maximmaan@gmail.com">maximmaan@gmail.com</a>.</p>
-        </section>
-    </main>
+                <h3>Contact by email</h3>
+                <p>When you use the contact form, your question and reply email address are passed to your device’s email app to open a message draft. You choose whether to send it. If I receive your email, I use its contents and your email address solely to reply and retain them only as long as needed for our correspondence. You may request deletion at any time using the contact address below.</p>
+
+                <h3>Images loaded from the internet</h3>
+                <p>Portfolio project images are loaded from Postimages over a secure HTTPS connection. When an image is requested, Postimages receives a standard network request that may include your IP address and technical request metadata. See the <a href="https://postimages.org/privacy" rel="noopener noreferrer">Postimages Privacy Policy</a> for more details.</p>
+
+                <h3>Contact</h3>
+                <p>For privacy inquiries or data deletion requests, contact developer Maksim Poplavskij at <a href="mailto:maximmaan@gmail.com">maximmaan@gmail.com</a>.</p>
+            </section>
+        </main>
+
+        <footer>
+            © 2026 Maksim Poplavskij • Vizitinė kortelė – Maksim
+        </footer>
+    </div>
 </body>
 </html>
